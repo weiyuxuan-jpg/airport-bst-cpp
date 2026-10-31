@@ -1,0 +1,12 @@
+# Task 3(c): add a made-up airport, show it can be found, then remove it.
+# Run from the project root:  ./airports < tests/sessions/qqq.txt
+load data/airports.dat
+find QQQ
+add QQQ Yuxuan Wei International Airport, Boston, United States
+find QQQ
+levels 3 QQT
+remove QQQ
+find QQQ
+levels 3 QQT
+stats
+quit

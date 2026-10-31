@@ -1,0 +1,16 @@
+# Build outputs
+/airports
+*.o
+*.dSYM/
+build/
+tests/bin/
+
+# Files written by `save FILE` during tests
+*.preorder.txt
+
+# macOS / editor
+.DS_Store
+.vscode/
+
+# Local development log (contains local paths); kept out of the repository by the author's choice
+PROGRESS.md

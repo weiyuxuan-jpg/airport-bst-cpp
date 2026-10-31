@@ -1,0 +1,16 @@
+# Task 4(b): save in preorder, change the tree, load the saved file back.
+# The reloaded tree has the same height, average depth and levels as the saved one.
+# Run from the project root:  ./airports < tests/sessions/save_load.txt
+# (The saved file goes to tests/bin/, which git ignores.)
+load data/airports.dat
+levels 4
+save tests/bin/session_tree.txt
+remove BOS
+add QQQ Yuxuan Wei International Airport, Boston, United States
+stats
+load tests/bin/session_tree.txt
+levels 4
+find BOS
+find QQQ
+validate
+quit

@@ -1,0 +1,9 @@
+# The sample session of the project description, command for command.
+# Run from the project root:  ./airports < tests/sessions/sample.txt
+load data/airports.dat
+find BOS
+find XYZ
+range BOS BWI
+remove BOS
+rebalance
+quit

@@ -1,0 +1,47 @@
+# Task 3(b): one delete per case on the file-order tree, with the top three levels
+# before and after, and three levels from the deleted node's parent (for nodes deeper
+# than level 2, the top three levels cannot change). The tree is reloaded before each
+# case so the cases do not affect each other.
+# Run from the project root:  ./airports < tests/sessions/delete_cases.txt
+#
+# D1 leaf: AAC (parent AAA)
+load data/airports.dat
+levels
+levels 3 AAA
+remove AAC
+levels
+levels 3 AAA
+#
+# D2 only a left child: GJT (parent GJM)
+load data/airports.dat
+levels 3 GJM
+remove GJT
+levels
+levels 3 GJM
+#
+# D2 only a right child: AAA (parent AAE)
+load data/airports.dat
+levels 3 AAE
+remove AAA
+levels
+levels 3 AAE
+#
+# D3 two children: AEY (depth 1, inside the top three levels)
+load data/airports.dat
+levels
+remove AEY
+levels
+#
+# The root (D3): GKA
+load data/airports.dat
+levels
+remove GKA
+levels
+#
+# The sample session's delete: BOS (D2, parent BOU)
+load data/airports.dat
+levels 3 BOU
+remove BOS
+levels
+levels 3 BOU
+quit

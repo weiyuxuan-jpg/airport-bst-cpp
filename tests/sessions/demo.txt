@@ -1,0 +1,12 @@
+# The commands of the screen recording (docs/demo.md): find, range, remove of a node with
+# two children, validate. The same commands can be typed by hand after
+#   ./airports data/airports.dat
+# or run in one go from the project root:  ./airports data/airports.dat < tests/sessions/demo.txt
+find BOS
+find XYZ
+range BOS BOZ
+levels
+remove AEY
+levels
+validate
+quit
