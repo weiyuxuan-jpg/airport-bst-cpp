@@ -13,6 +13,10 @@ Fall 2026).
 - `save` the tree in preorder and `load` it back with exactly the same shape
 - `rebalance` the tree, and an `experiment` comparing four insertion orders
 
+A 48-second screen recording of a session (`find`, `range`, removing a node with two
+children, `validate`) is in [docs/demo.mov](docs/demo.mov); [docs/demo.md](docs/demo.md)
+says how it was made.
+
 ## Build and run
 
 ```
@@ -250,7 +254,7 @@ reach `root` or the nodes.
 ```
 src/        Airport, AirportBST, loader and save files, command loop, experiment, main
 data/       airports.dat (OpenFlights) and its credit
-docs/       pseudocode.md, shape_experiment.md, demo.md (how the screen recording is made)
+docs/       pseudocode.md, shape_experiment.md, demo.mov (screen recording), demo.md (how it is made)
 tests/      test programs, run_tests.sh, sessions/ (command files: sample, demo, ...)
 LICENSE     MIT license for the code
 ```

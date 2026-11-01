@@ -4,6 +4,19 @@ The project asks for a short screen recording or GIF of a session that shows `fi
 `range`, the removal of a node with two children, and `validate`. These steps produce a
 recording of about one minute.
 
+## The recording in this folder
+
+[`demo.mov`](demo.mov) (48 seconds, 2940 × 1912, H.264, no sound) was recorded on
+2026-11-01 on macOS 26.6 with the system's own `screencapture -v -V 48`, with the terminal
+filling the screen.
+
+The commands in it were **not typed by hand**. A shell script printed the line
+`$ ./airports data/airports.dat`, then started the program and sent it the commands of
+`tests/sessions/demo.txt` (without the comment lines), one every 5 seconds. Input that
+does not come from a keyboard is echoed by the program after its `>` prompt, which is how
+the commands appear on screen. Everything after the first line is the program's own output,
+the same as in the table below.
+
 ## Before recording
 
 1. Open a terminal in the project folder and make the window large enough for about
